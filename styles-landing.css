@@ -13,17 +13,22 @@ body {
     padding: 2rem;
     height: 100vh;
     color: rgb(99, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 .content {
     background: white;
-    margin: 3rem auto;
-    width: 40rem;
-    height: auto;
+    width: 90%;
+    max-width: 40rem;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: inset 0 0 0.7rem 0.2rem rgba(220, 183, 134, 0.6); 
 }
+
 
 header {
     margin-bottom: 2rem;
@@ -82,4 +87,52 @@ footer {
     margin-top: 3rem;
     font-size: 0.9rem;
     color: gray;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.57rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .intro {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+        background-size: cover;
+    }
+
+    .content {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
 }
