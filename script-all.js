@@ -44,7 +44,7 @@ function searchById() {
   }
 }
 
-document.getElementById("add-row-btn").addEventListener("click", function () {
+function addNewRow() {
     let table = document.getElementById("name-table").getElementsByTagName("tbody")[0];
 
     // Create a new row
@@ -71,4 +71,7 @@ document.getElementById("add-row-btn").addEventListener("click", function () {
     // ID cell
     let idCell = newRow.insertCell(3);
     idCell.innerHTML = `<input type="number" placeholder="Enter ID" class="new-row-input">`;
-});
+}
+
+// Add click event listeners to both the button and icon
+document.getElementById("add-icon").addEventListener("click", addNewRow);

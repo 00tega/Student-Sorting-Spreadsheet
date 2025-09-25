@@ -91,3 +91,68 @@ td {
     text-align: center;
     background-color: white;
 }
+
+.material-symbols-outlined {
+    position: absolute;
+    bottom: 6rem;
+    right: 15rem;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(220, 183, 134);
+    cursor: pointer;
+    font-variation-settings: 'FILL' 0;
+    z-index: 1000;
+}
+
+.material-symbols-outlined:hover {
+    background: rgb(220, 183, 134);
+    color: white;
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24,
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 90vw;
+        min-width: unset;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+        min-width: 80px;
+        white-space: normal;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .material-symbols-outlined {
+        right: 1rem;
+        bottom: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+
+    caption {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+
+    .material-symbols-outlined {
+        padding: 8px;
+        font-size: 20px;
+    }
+}
