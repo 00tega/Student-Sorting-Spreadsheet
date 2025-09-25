@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("Screenshot 2025-09-25 105049.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem;
+    height: 100vh;
+    color: rgb(99, 98, 98);
+}
+
+.content {
+    background: white;
+    margin: 3rem auto;
+    width: 40rem;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: inset 0 0 0.7rem 0.2rem rgba(220, 183, 134, 0.6); 
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(73, 67, 60);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: rgb(73, 67, 60);
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: rgb(254, 249, 242);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro:hover {
+    transform: scale(105%);
+    transition: 0.3s;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: antiquewhite;
+    border: 2px solid rgb(220, 183, 134);
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+.btn:hover {
+    background: rgb(220, 183, 134);
+    color: white;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: gray;
+}

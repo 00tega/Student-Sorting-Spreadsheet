@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorting</title>
+        <link rel="stylesheet" href="styles-all.css">
+    </head>
+    <body>
+        <table id="name-table">
+            <caption>Name Sorting Spreadsheet</caption>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="text" id="name-search" onkeyup="searchByName()" placeholder="Search for names..." class="search">
+                    </th>
+                    <th>
+                        <form method="get" action="#">
+                            <label for="gender"></label>
+                            <select id="gender">
+                                <option value="">Gender</option>
+                                <option value="all-names.html">All</option>
+                                <option value="female.html">Female</option>
+                                <option value="male.html">Male</option>
+                            </select>
+                        </form>
+                    </th>
+                    <th>Age</th>
+                    <th>
+                        <input type="number" id="id-search" onkeyup="searchById()" placeholder="Search for ID No." class="search">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Dorothy</th>
+                    <td>Female</td>
+                    <td>19</td>
+                    <td>38828</td>
+                </tr>
+                <tr>
+                    <th>Victor</th>
+                    <td>Male</td>
+                    <td>20</td>
+                    <td>43532</td>
+                </tr>
+                <tr>
+                    <th>Lenny</th>
+                    <td>Male</td>
+                    <td>19</td>
+                    <td>46722</td>
+                </tr>
+                <tr>
+                    <th>Sandra</th>
+                    <td>Female</td>
+                    <td>19</td>
+                    <td>43457</td>
+                </tr>
+                <tr>
+                    <th>Timothy</th>
+                    <td>Male</td>
+                    <td>18</td>
+                    <td>24466</td>
+                </tr>
+                <tr>
+                    <th>Jennifer</th>
+                    <td>Female</td>
+                    <td>16</td>
+                    <td>57643</td>
+                </tr>
+                <tr>
+                    <th>Elizabeth</th>
+                    <td>Female</td>
+                    <td>17</td>
+                    <td>22346</td>
+                </tr>
+                <tr>
+                    <th>Fred</th>
+                    <td>Male</td>
+                    <td>17</td>
+                    <td>76645</td>
+                </tr>
+                <tr>
+                    <th>Nadia</th>
+                    <td>Female</td>
+                    <td>18</td>
+                    <td>76743</td>
+                </tr>
+                <tr>
+                    <th>Jeffrey</th>
+                    <td>Male</td>
+                    <td>17</td>
+                    <td>23453</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add-row-btn">Add Student</button>
+    <script src="script-all.js"></script>
+    </body>
+</html>
