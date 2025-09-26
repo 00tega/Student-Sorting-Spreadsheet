@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Page</title>
+        <link rel="stylesheet" href="styles-all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add,delete,download,cancel"/>
+    </head>
+    <body>
+        <table id="name-table">
+            <caption>Name Sorting Spreadsheet</caption>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="text" id="name-search" onkeyup="searchByName()" placeholder="Search for names..." class="search">
+                    </th>
+                    <th>
+                        <form method="get" action="#">
+                            <label for="gender"></label>
+                            <select id="gender">
+                                <option value="">Gender</option>
+                                <option value="all-names.html">All</option>
+                                <option value="female.html">Female</option>
+                                <option value="male.html">Male</option>
+                            </select>
+                        </form>
+                    </th>
+                    <th>Age</th>
+                    <th>
+                        <input type="number" id="id-search" onkeyup="searchById()" placeholder="Search for ID No." class="search">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="new-page-button" title="Create New Page">
+            <a href="new-page.html" class="new-page-link">Create New Page</a>
+        </div>        .
+        <div id="add-icon" title="Add new student">+</div>
+        <div class="material-symbols-outlined" id="download-btn" title="Download as Excel">download xlsx file</div>
+        
+        <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+        <script src="script-new-page.js"></script>
+    </body>
+</html>

@@ -97,18 +97,72 @@ td {
     background-color: white;
 }
 
-.delete-btn {
-    display: inline-block;
-    color: #ff4444;
+.delete-btn, .cancel-btn {
     cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    min-width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 4px;
-    transition: all 0.2s ease;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.delete-btn {
+    color: #ff6b6b;
+}
+
+.cancel-btn {
+    color: #ffa94d;
+    margin-left: 4px;
+    display: none;
+}
+
+.delete-btn:hover {
+    background-color: #ffe5e5;
+}
+
+.cancel-btn:hover {
+    background-color: #fff4e6;
+}
+
+#download-btn {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.2s;
+}
+
+#download-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+#add-icon {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(220, 183, 134);
+    cursor: move;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1000;
+}
+
+#add-icon:hover {
+    background: rgb(220, 183, 134);
+    color: white;
+}
+
+th:nth-child(5), td:nth-child(5) { 
+    width: 10%;
+    min-width: 80px;
 }
 
 .delete-btn:hover {
@@ -198,7 +252,8 @@ td {
     background-color: #28a745;
     color: white;
     padding: 10px;
-    border-radius: 15%;
+    width: 10rem;
+    border-radius: 5%;
     border: 2px solid #28a745;
     cursor: pointer;
     touch-action: none;
@@ -211,6 +266,34 @@ td {
 #download-btn:hover {
     background-color: #1e7e34;
     border-color: #1e7e34;
+}
+
+.new-page-button {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background-color: rgb(220, 183, 134);
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    border: 2px solid;
+    cursor: pointer;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1000;
+    transition: all 0.2s;
+}
+
+.new-page-button:hover {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+}
+
+
+.new-page-link {
+    color: white;
+    text-decoration: none;
 }
 
 .material-symbols-outlined:hover {
