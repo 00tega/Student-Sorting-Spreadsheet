@@ -1,8 +1,30 @@
-document.getElementById("gender").onchange = function() {
-    if (this.selectedIndex!==0) {
-        window.location.href = this.value;
-    }        
-};
+    function filterByGender() {
+    const select = document.getElementById("gender");
+    const selectedGender = select.value.toLowerCase();
+    const table = document.getElementById("name-table");
+    const rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+    // If Gender (empty value) or All is selected, show all rows
+    if (selectedGender === "" || selectedGender === "all") {
+        for (let row of rows) {
+            row.style.display = "";
+        }
+        return;
+    }
+
+    // Filter by selected gender
+    for (let row of rows) {
+        const genderCell = row.getElementsByTagName("td")[1]; // Gender is in the second cell (index 1)
+        if (genderCell) {
+            const gender = genderCell.textContent.toLowerCase();
+            if (gender === selectedGender) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        }
+    }
+}
 
 function searchByName() {
     var input, filter, table, tr, th, i, txtValue;

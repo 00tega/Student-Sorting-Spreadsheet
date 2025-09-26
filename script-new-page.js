@@ -67,11 +67,24 @@ function deleteRow(event) {
     }
 }
 
-document.getElementById("gender").onchange = function() {
-    if (this.selectedIndex!==0) {
-        window.location.href = this.value;
-    }        
-};
+function filterByGender() {
+    const select = document.getElementById("gender");
+    const selectedGender = select.value.toLowerCase();
+    const table = document.getElementById("name-table");
+    const rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+    for (let row of rows) {
+        const genderSelect = row.cells[1].querySelector('select');
+        if (genderSelect) {
+            const gender = genderSelect.value.toLowerCase();
+            if (selectedGender === 'all' || gender === selectedGender) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        }
+    }
+}
 
 function searchByName() {
     var input, filter, table, tr, nameInput, i, txtValue;
