@@ -283,17 +283,12 @@ th:nth-child(5), td:nth-child(5) {
     -webkit-user-select: none;
     z-index: 1000;
     transition: all 0.2s;
+    text-decoration: none;
 }
 
 .new-page-button:hover {
     background-color: #1e7e34;
     border-color: #1e7e34;
-}
-
-
-.new-page-link {
-    color: white;
-    text-decoration: none;
 }
 
 .material-symbols-outlined:hover {
