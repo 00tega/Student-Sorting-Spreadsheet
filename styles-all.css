@@ -269,7 +269,7 @@ th:nth-child(5), td:nth-child(5) {
 }
 
 .new-page-button {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     background-color: rgb(220, 183, 134);
@@ -341,6 +341,14 @@ th:nth-child(5), td:nth-child(5) {
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    #download-btn {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 2.5rem;
+        width: fit-content;
     }
 }
 
